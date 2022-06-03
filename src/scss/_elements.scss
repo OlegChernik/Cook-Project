@@ -1,0 +1,15 @@
+%container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+%content_Just_Align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%content_Align {
+    display: flex;
+    align-items: center;
+}
