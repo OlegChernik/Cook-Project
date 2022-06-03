@@ -190,3 +190,298 @@
         }
     }    
 }
+
+
+.page {
+    padding-top: 3rem;
+
+    &__title {
+        @extend %container;
+        color: $color-title;
+        margin-bottom: 3rem;
+        border-left: 4px solid rgba(97, 137, 103, 1);
+        padding-left: 1rem;
+    }
+}
+
+.line {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin:  0 0 50px 0 ;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem; 
+   
+    &__products {
+        @extend %content_Just_Align;  
+        padding-bottom: 10px;
+    }
+
+    &__product {
+        position: relative;
+        width: 25%;
+        background:$color-swiper; 
+        border-radius: 1rem;
+        color: $color-title;
+        margin: 1rem;
+      
+        &:hover {
+            box-shadow: 0 30px 45px 0 rgba(43, 40, 40, 0.6);
+            transition: all .5s;
+        }
+
+        .sum__choice {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            display: inline-block;
+            padding: 14px 19px 12px;
+            background: $color-basket;
+            border-radius: 50%;
+        }
+    }
+
+    &__img {
+         margin-bottom: 1rem;
+        
+         img {
+          width: 100%;
+         }
+    }
+
+    &__title {
+        @extend %content_Just_Align;
+        padding: 0 1rem 5px;
+
+        .mane {
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+        .weight {
+            font-size: 12px;
+        }
+    }
+    
+    &__subtitle {
+        padding: 0 1rem 1rem;
+        min-height: 3rem;
+        color:rgba(207, 207, 207, 1);
+        font-size: 13px
+    }
+
+    &__butoon {
+        @extend %content_Just_Align;
+        padding: 0 1rem 1rem;
+
+        .bask {
+            background: rgba(97, 137, 103, 1) url('../icons/Callingtwo.svg') center right 1rem no-repeat ;
+            padding: 13px 52px 13px 19px;
+            border-radius: 10px;  
+        }
+
+        a {
+            color: aliceblue;
+        }
+    }
+}
+
+
+.aboutUs {
+    background:rgba(33, 31, 32, 1) url('../img/Mask\ Grouptwo.png')center / cover no-repeat;
+    margin: 5rem 2rem 0;
+    position: relative;
+    z-index: 10;
+
+    &__info {
+        width: 50%;
+    }
+
+    .us {
+        padding: 6rem;
+
+        &__title {
+            font-size: 32px;
+            color: $color-title;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        &__text {
+            font-size: 20px;
+            color: rgba(207, 207, 207, 1);
+            margin-bottom: 4rem;
+        }
+
+        &__bottom {
+            width: 233px;
+            font-size: 13px;
+            color: $color-title;
+            padding: 22px 25px 22px 64px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.05);
+        }
+    }
+
+    &__pros {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem 7rem;
+    }
+
+    .plus {
+        width: 45%;
+        background: rgba(80, 75, 74, 0.9);
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        &:hover {
+            box-shadow: 0 40px 50px 0 rgba(0, 0, 0, 0.4);
+            background:  rgba(80, 75, 74, 1);
+            transition: all .5s;  
+        }
+
+        &__icos {
+            margin-bottom: 1rem;
+        }
+
+        &__info {
+            color: $color-title;
+        }
+        .green {
+            color: rgba(121, 178, 130, 1);
+        } 
+    }
+}
+
+.row {
+    display: flex;  
+}
+
+
+.location {
+    background: url('../img/Mask\ Groupthree.png') center / 100% auto no-repeat;
+    margin: -5rem 0 0 0;
+    padding-top: 220px;
+    padding-bottom: 50px;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: -4rem 0 0 0;
+    }
+}
+
+.contacts {
+    max-width:565px;
+    min-height: 405px;
+    padding: 1.5rem 3rem;
+    background: rgba(46, 43, 44, 1);
+    box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin-left: 7rem;
+
+    &__title {
+        color: $color-title;
+        margin-bottom: 0.5rem;
+        font-size: 30px;
+        font-weight: 700;
+
+        &::after {
+            content:''; 
+            width: 100%;
+            height: 1px;
+            display: inline-block;
+            background:linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+        } 
+    }
+
+    &__location {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+
+        img {
+            padding: 0 10px;
+        }
+    }
+    &__text {
+        color: $color-title;
+        font-size: 16px;
+        font-weight: 700;
+
+        span {
+            font-size: 14px;
+            font-weight: 400;
+            display: block;
+            color: #CFCFCF;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+        .push {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            padding: 22px 30px;
+            background: $color-basket;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 700;
+            color: $color-title;
+            margin-right: 2rem;
+        }
+
+        .cont {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &__tel {
+                color: $color-title;
+                font-weight: 700;
+                font-size: 23px;
+            }
+
+            &__text {
+                font-size: 13px;
+                color: rgba(207, 207, 207, 1);
+            }   
+        }  
+    }
+
+    &__network {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        color: $color-title;
+        font-size: 16px;
+
+        .we {
+            margin-right: 1.5rem;
+        }
+        img {
+            margin-right: 10px;
+        }
+    }
+}
+
+.label {
+    margin: 1rem 20rem 0 0; 
+}
+
