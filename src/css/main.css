@@ -9,12 +9,12 @@
   outline: none;
 }
 
-.header__top, .nav__lists {
+.header__top, .nav__lists, .page__title {
   max-width: 1300px;
   margin: 0 auto;
 }
 
-.contact, .nav__lists {
+.contact, .nav__lists, .swiper__products, .swiper__title, .swiper__butoon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,5 +231,344 @@
   padding-bottom: 28px;
   -webkit-transition: .7s;
   transition: .7s;
+}
+
+.page {
+  padding-top: 3rem;
+}
+
+.page__title {
+  color: white;
+  margin-bottom: 3rem;
+  border-left: 4px solid #618967;
+  padding-left: 1rem;
+}
+
+.line {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 0 50px 0;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.swiper__products {
+  padding-bottom: 10px;
+}
+
+.swiper__product {
+  position: relative;
+  width: 25%;
+  background: #494544;
+  border-radius: 1rem;
+  color: white;
+  margin: 1rem;
+}
+
+.swiper__product:hover {
+  -webkit-box-shadow: 0 30px 45px 0 rgba(43, 40, 40, 0.6);
+          box-shadow: 0 30px 45px 0 rgba(43, 40, 40, 0.6);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.swiper__product .sum__choice {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: inline-block;
+  padding: 14px 19px 12px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#618967), to(#72a479));
+  background: linear-gradient(#618967, #72a479);
+  border-radius: 50%;
+}
+
+.swiper__img {
+  margin-bottom: 1rem;
+}
+
+.swiper__img img {
+  width: 100%;
+}
+
+.swiper__title {
+  padding: 0 1rem 5px;
+}
+
+.swiper__title .mane {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.swiper__title .weight {
+  font-size: 12px;
+}
+
+.swiper__subtitle {
+  padding: 0 1rem 1rem;
+  min-height: 3rem;
+  color: #cfcfcf;
+  font-size: 13px;
+}
+
+.swiper__butoon {
+  padding: 0 1rem 1rem;
+}
+
+.swiper__butoon .bask {
+  background: #618967 url("../icons/Callingtwo.svg") center right 1rem no-repeat;
+  padding: 13px 52px 13px 19px;
+  border-radius: 10px;
+}
+
+.swiper__butoon a {
+  color: aliceblue;
+}
+
+.aboutUs {
+  background: #211f20 url("../img/Mask Grouptwo.png") center/cover no-repeat;
+  margin: 5rem 2rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.aboutUs__info {
+  width: 50%;
+}
+
+.aboutUs .us {
+  padding: 6rem;
+}
+
+.aboutUs .us__title {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.aboutUs .us__text {
+  font-size: 20px;
+  color: #cfcfcf;
+  margin-bottom: 4rem;
+}
+
+.aboutUs .us__bottom {
+  width: 233px;
+  font-size: 13px;
+  color: white;
+  padding: 22px 25px 22px 64px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.aboutUs__pros {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2rem 7rem;
+}
+
+.aboutUs .plus {
+  width: 45%;
+  background: rgba(80, 75, 74, 0.9);
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.aboutUs .plus:hover {
+  -webkit-box-shadow: 0 40px 50px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 40px 50px 0 rgba(0, 0, 0, 0.4);
+  background: #504b4a;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.aboutUs .plus__icos {
+  margin-bottom: 1rem;
+}
+
+.aboutUs .plus__info {
+  color: white;
+}
+
+.aboutUs .plus .green {
+  color: #79b282;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.location {
+  background: url("../img/Mask Groupthree.png") center/100% auto no-repeat;
+  margin: -5rem 0 0 0;
+  padding-top: 220px;
+  padding-bottom: 50px;
+}
+
+.location__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -4rem 0 0 0;
+}
+
+.contacts {
+  max-width: 565px;
+  min-height: 405px;
+  padding: 1.5rem 3rem;
+  background: #2e2b2c;
+  -webkit-box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  margin-left: 7rem;
+}
+
+.contacts__title {
+  color: white;
+  margin-bottom: 0.5rem;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.contacts__title::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+.contacts__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.contacts__location img {
+  padding: 0 10px;
+}
+
+.contacts__text {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.contacts__text span {
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  color: #CFCFCF;
+  margin-bottom: 5px;
+}
+
+.contacts__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.contacts__bottom .push {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 22px 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#618967), to(#72a479));
+  background: linear-gradient(#618967, #72a479);
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+  margin-right: 2rem;
+}
+
+.contacts__bottom .cont {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts__bottom .cont__tel {
+  color: white;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.contacts__bottom .cont__text {
+  font-size: 13px;
+  color: #cfcfcf;
+}
+
+.contacts__network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+  color: white;
+  font-size: 16px;
+}
+
+.contacts__network .we {
+  margin-right: 1.5rem;
+}
+
+.contacts__network img {
+  margin-right: 10px;
+}
+
+.label {
+  margin: 1rem 20rem 0 0;
 }
 /*# sourceMappingURL=main.css.map */
